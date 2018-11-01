@@ -20,4 +20,4 @@ options = {
 vrvToolkit.setOptions(options)
 
 /* Show the score */
-showScore('score', 'data/Pastime_Paradise.mei') // <-- CHANGE THIS TO YOUR FILE
+showScore('score', 'data/PastimeParadise.mei') // <-- CHANGE THIS TO YOUR FILE
