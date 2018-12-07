@@ -4,10 +4,71 @@
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
     <meiHead>
         <fileDesc>
-            <titleStmt>
+            <titleStmt xml:id="sw-1">
                 <title>Pastime Paradise</title>
+                <title type="subtitle">
+                    <identifier>Song's in the Key of Life Collector's Edition</identifier>
+                </title>
+                <arranger>Dan Coates</arranger>
+                <author>Stevie Wonder</author>
+                <date>1976</date>
+                <composer>Stevie Wonder</composer>
+                <editor>Steve Francis</editor>
+                <editor>Bill Radics</editor>
+                <editor>Bill Soliday</editor>
+                <lyricist>Stevie Wonder</lyricist>
+                <respStmt>
+                    <persName role="lyr" startdate="1950" authURI=https://viaf.org/viaf/7575770/
+                        authority="VIAF" xml:id="sw-2">Stevie Wonder</persName>
+                    <resp>Encoded by</resp>
+                    <resp>Vili Petkovic</resp>
+                </respStmt>
             </titleStmt>
-            <pubStmt></pubStmt>
+            <editionStmt>
+                <title>Stevie Wonder's Songs in the Key of Life</title>
+                <editor>Steve Francis</editor>
+                <editor>Bill Radics</editor>
+                <editor>Bill Soliday</editor>
+                <date>1976</date>
+                <pubPlace>Miami</pubPlace>
+                <respStmt>
+                    <resp>Published by</resp>
+                    <corpName role="pbl">Central Litho</corpName>
+                </respStmt>
+            </editionStmt>
+            <pubStmt>
+                <publisher>
+                    <corpName>Columbia Pictures Publications</corpName>
+                </publisher>
+                <address>
+                    <addrLine>
+                        <geogName>Hialeah</geogName>
+                    </addrLine>
+                    <addrLine>Florida
+                    </addrLine>
+                </address>
+            </pubStmt>
+            <sourceDesc>
+                <source xml:id="header.s1">
+                    <identifier>Song's in the Key of Life Collector's Edition</identifier>
+                    <titleStmt>
+                    <title>Pastime Paradise</title>
+                        <respStmt>
+                            <persName role="cmp">Stevie Wonder</persName>
+                        </respStmt>
+                    </titleStmt>
+                    <pubStmt>
+                        <title>Song's in the Key of Life Collector's Edition</title>
+                        <pubPlace>Miami</pubPlace>
+                        <respStmt>
+                            <persName role="edt">Steve Francis</persName>
+                            <persName role="edt">Bill Radics</persName>
+                            <persName role="edt">Bill Soliday</persName>
+                        </respStmt>
+                        <date>1976</date>
+                    </pubStmt>
+                </source>
+            </sourceDesc>
         </fileDesc>
         <encodingDesc xml:id="encodingdesc-0000001587617444">
             <appInfo xml:id="appinfo-0000000163662051">
@@ -57,9 +118,9 @@
                                         <note xml:id="note-0000001328926396" dur="16" oct="6" pname="c" stem.dir="down">
                                             <artic xml:id="artic-0000001842123443" artic="acc" />
                                         </note>
-                                        <note xml:id="note-0000000567125828" dur="16" oct="6"<!--Changed to 1 octave higher--></note> pname="c" stem.dir="down" />
-                                        <note xml:id="note-0000001704437235" dur="16" oct="5" pname="f"<!--Changed c to f--></note> stem.dir="down" />
-                                        <note xml:id="note-0000000918675362" dur="16" oct="5" pname="c" stem.dir="up"<!--Changed down to up--></note> />
+                                        <note xml:id="note-0000000567125828" dur="16" oct="5"</note> pname="c" stem.dir="down" />
+                                        <note xml:id="note-0000001704437235" dur="16" oct="5" pname="c"</note> stem.dir="down" />
+                                        <note xml:id="note-0000000918675362" dur="16" oct="5" pname="c" stem.dir="down"</note> />
                                     </beam>
                                     <beam xml:id="beam-0000000859195077">
                                         <note xml:id="note-0000001078180655" dur="16" oct="6" pname="c" stem.dir="down">
