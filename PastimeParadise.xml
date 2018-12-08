@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE feature_vector_file [
+   <!ELEMENT feature_vector_file (comments, data_set+)>
+   <!ELEMENT comments (#PCDATA)>
+   <!ELEMENT data_set (data_set_id, section*, feature*)>
+   <!ELEMENT data_set_id (#PCDATA)>
+   <!ELEMENT section (feature+)>
+   <!ATTLIST section start CDATA ""
+                     stop CDATA "">
+   <!ELEMENT feature (name, v+)>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT v (#PCDATA)>
+]>
+
+<feature_vector_file>
+
+   <comments></comments>
+
+	<data_set>
+		<data_set_id>H:\DMIS Music Analytics\Individual Lab\Pastime_Paradise.mid</data_set_id>
+		<feature>
+			<name>Range</name>
+			<v>6E1</v>
+		</feature>
+		<feature>
+			<name>Mean Pitch</name>
+			<v>5.9E1</v>
+		</feature>
+		<feature>
+			<name>Mean Pitch Class</name>
+			<v>4.073E0</v>
+		</feature>
+		<feature>
+			<name>Most Common Pitch</name>
+			<v>7.2E1</v>
+		</feature>
+		<feature>
+			<name>Most Common Pitch Class</name>
+			<v>0E0</v>
+		</feature>
+		<feature>
+			<name>Pitch Variability</name>
+			<v>1.558E1</v>
+		</feature>
+		<feature>
+			<name>Vibrato Prevalence</name>
+			<v>0E0</v>
+		</feature>
+		<feature>
+			<name>Mean Melodic Interval</name>
+			<v>3.165E0</v>
+		</feature>
+		<feature>
+			<name>Repeated Notes</name>
+			<v>3.265E-1</v>
+		</feature>
+		<feature>
+			<name>Most Common Vertical Interval</name>
+			<v>0E0</v>
+		</feature>
+		<feature>
+			<name>Seventh Chords</name>
+			<v>9.483E-2</v>
+		</feature>
+	</data_set>
+
+</feature_vector_file>s>
+   </feature>
+
+   <feature>
+      <name>Most Common Pitch</name>
+      <description>MIDI pitch value of the most frequently occuring pitch.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Most Common Pitch Class</name>
+      <description>The pitch class that occurs most frequently compared to other pitch classes. A value of 0 corresponds to C, and pitches increase chromatically by semitone in integer untis (e.g. a value of 2 would mean that D is the most common pitch class). Enharmonic equivalents are treated as a single pitch class.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Pitch Variability</name>
+      <description>Standard deviation of the MIDI pitches of all pitched notes in the piece. Provides a measure of how close the pitches as a whole are to the mean pitch.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Vibrato Prevalence</name>
+      <description>Number of pitched notes that have associated MIDI Pitch Bend messages change direction at least twice in connection with the note in question, divided by the total number of pitched Note Ons in the piece.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Mean Melodic Interval</name>
+      <description>Mean average (in semitones) of the intervals involved in each of the melodic intervals in the piece.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Repeated Notes</name>
+      <description>Fraction of melodic intervals that correspond to repeated notes.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Most Common Vertical Interval</name>
+      <description>The interval in semitones corresponding to the wrapped vertical interval histogram bin with the highest magnitude.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Seventh Chords</name>
+      <description>Fraction of all simultaneously sounding pitch groups that are dominant seventh, major seventh or minor seventh chords. This is weighted by how long pitch groups are held (e.g. a pitch group lasting a whole note will be weighted four times as strongly as a pitch group lasting a quarter note).</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+</feature_key_file>
